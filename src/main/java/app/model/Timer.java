@@ -1,10 +1,11 @@
 package app.model;
 
-public class Timer {
 
-    private Long nanoTime = System.nanoTime();
+public class Timer{
 
-    public Long getTime() {
+    private static Long nanoTime = System.nanoTime();
+
+    public static Long getTime() {
         return nanoTime;
     }
 }
